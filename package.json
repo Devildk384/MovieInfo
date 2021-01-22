@@ -32,10 +32,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "CI =  react-scripts start",
+    "start": "react-scripts start",
     "build": "CI = react-scripts build",
-    "test": "CI = react-scripts test jest",
-    "eject": "CI = react-scripts eject"
+    "test": "react-scripts test jest",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
