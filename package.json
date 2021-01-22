@@ -33,7 +33,7 @@
   "scripts": {
     "start": "CI =  react-scripts start",
     "build": "CI = react-scripts build",
-    "test": "CI =  react-scripts test",
+    "test": "CI = react-scripts test jest",
     "eject": "CI = react-scripts eject"
   },
   "eslintConfig": {
