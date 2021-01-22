@@ -1,0 +1,10 @@
+.home-movie-list {
+  display: grid;
+  grid-column: full-start/full-end;
+}
+.home-movie-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: var(--mainwhite);
+}

@@ -1,0 +1,46 @@
+.movie-info-bar {
+  grid-column: center-start/center-end;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+  padding: 2rem 6rem;
+}
+@media (max-width: 1220px) {
+  .movie-info-bar {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .movie-info-bar {
+    grid-column: full-start/full-end;
+    padding: 2rem 1rem;
+  }
+}
+.movie-info-bar__item {
+  display: flex;
+  align-items: center;
+}
+.movie-info-bar__info {
+  color: #fff;
+  font-size: 1.2rem;
+}
+@media (max-width: 425px) {
+  .movie-info-bar__info {
+    font-size: 1rem;
+  }
+}
+.movie-info-bar .fa-time,
+.movie-info-bar .fa-revenue,
+.movie-info-bar .fa-budget {
+  color: white;
+  margin-right: 0.8rem;
+  font-size: 2rem;
+}
+@media (max-width: 650px) {
+  .movie-info-bar .fa-time,
+.movie-info-bar .fa-revenue,
+.movie-info-bar .fa-budget {
+    display: none;
+  }
+}

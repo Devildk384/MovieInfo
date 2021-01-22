@@ -1,0 +1,16 @@
+.movies-container {
+  display: grid;
+  grid-template-rows: min-content auto minmax(min-content, auto) auto;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+.movies-container__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .movies-container__wrapper {
+    padding: 22rem 0.3rem;
+  }
+}

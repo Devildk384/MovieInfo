@@ -1,0 +1,30 @@
+import React from 'react'
+import SimilarMovieItem from './SimilarMovieItem';
+
+const SilmilarMoviesList = ({movieList,getMovieById}) => {
+    const base_url = 'https://image.tmdb.org/t/p/w342';
+    const not_available_poster = "https://dummyimage.com/243x350/7b8a91/ffffff&text=Poster+Not+Available";
+    const list_of_movies = movieList && movieList.map((movie,idx) => (
+        <SimilarMovieItem
+            key={idx}
+            id={movie.id}
+            getMovieById={getMovieById}
+            releaseDate={movie.release_date && movie.release_date.slice(0, 4)}
+            title={movie.title}
+            voteAvg={movie.vote_average}
+            mediaType={movie.media_type}
+            poster={ movie.poster_path === null ? not_available_poster : base_url + movie.poster_path }
+        />
+    ));
+
+    return (
+        <>
+       
+                {list_of_movies}
+
+                </>
+        
+    )
+}
+
+export default SilmilarMoviesList

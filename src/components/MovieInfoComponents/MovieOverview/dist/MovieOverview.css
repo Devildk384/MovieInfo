@@ -1,0 +1,23 @@
+.movie-overview {
+  grid-column: center-start/center-end;
+  background-color: white;
+  padding: 2rem 6rem;
+}
+.movie-overview h1 {
+  font-size: 1.8rem;
+}
+.movie-overview__text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@media (max-width: 500px) {
+  .movie-overview__text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1220px) {
+  .movie-overview {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}

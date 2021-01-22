@@ -1,0 +1,22 @@
+.movie-list {
+  display: grid;
+  margin-top: 1px;
+  grid-column: full-start/full-end;
+}
+.movie-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: var(--mainWhite);
+}
+@media screen and (max-width: 1220px) {
+  .movie-list {
+    grid-column: full-start/full-end;
+  }
+}
+@media screen and (min-width: 320px) {
+  .movie-list .container.movie-type h1 {
+    font-size: 1.6rem;
+    color: #333333;
+  }
+}

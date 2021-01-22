@@ -1,0 +1,50 @@
+.carousel-container {
+  grid-column: full-start/full-end;
+  animation: animateCarousel 2s;
+}
+@media screen and (max-width: 1220px) {
+  .carousel-container {
+    grid-column: full-start/full-end;
+  }
+}
+
+.control-arrow {
+  z-index: 10000000 !important;
+}
+
+.carousel-slider {
+  background-color: #cfcfcf;
+}
+
+.carousel .thumbs-wrapper,
+.carousel-status {
+  display: none;
+}
+.carousel .thumbs-wrapper .carousel-img,
+.carousel-status .carousel-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) center center/cover no-repeat !important;
+  border-radius: 2px;
+}
+
+.legend {
+  font-size: 1.2rem !important;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  opacity: 0.7 !important;
+  margin: 0 auto;
+}
+.legend p {
+  text-align: center;
+}
+.legend .movie-title {
+  color: var(--primaryColor);
+  font-size: 1.7rem;
+}
+
+@keyframes animateCarousel {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

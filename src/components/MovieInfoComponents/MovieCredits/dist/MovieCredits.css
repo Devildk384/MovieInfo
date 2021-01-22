@@ -1,0 +1,15 @@
+.movie-credits-container {
+  grid-column: center-start/center-end;
+  background-color: #f6f6f6;
+  padding: 60px 0;
+}
+.movie-credits-container__cast {
+  padding: 20px 20px;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.movie-credits-container__cast__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
